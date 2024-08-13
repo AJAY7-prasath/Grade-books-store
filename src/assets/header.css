@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+  border: 1px solid black; 
+  font-family:Stencil Std, fantasy;
+  color: rgb(25, 25, 39);
+  max-width: 100%; 
+  overflow-x: hidden;
+  box-sizing: border-box; 
+}
+
+.logo {
+  font-size: 24px; 
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap; /* Added to ensure items wrap if space is constrained */
+}

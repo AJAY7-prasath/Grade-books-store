@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #7136b9;
+    --secondary-color: #0a0600;
+    --background-color: #f9f9f9;
+    --border-color: #ccc;
+    --text-color: #333;
+    --button-hover-color: #000000;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .cart-container {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  
+  }
+  
+  .cart,
+  .order-summary {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .cart {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .order-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .price-card {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: right;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-card p {
+    margin: 10px 0;
+  }
+  
+  .price-card p:last-child {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
